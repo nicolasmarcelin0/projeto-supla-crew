@@ -8,7 +8,14 @@ struct PerfilUsuarioView: View {
     
     var body: some View {
         
-        VStack() {
+        GeometryReader { geo in
+            ZStack {
+                Image("fundo")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                VStack (alignment: .center) {
             // Ft. de perfil e campo p/ nome de usuário
             HStack {
                 // Foto de perfil
@@ -106,11 +113,13 @@ struct PerfilUsuarioView: View {
         
 
 
-
-
+        }
+    }
+    
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         PerfilUsuarioView()
         }
     }
 }
+
