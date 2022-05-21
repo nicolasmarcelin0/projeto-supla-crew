@@ -14,6 +14,7 @@ var empresa_padrao = Empresa(nome: "Nome da organização", descricao: "Descriç
 var empresa1 = Empresa(nome: "ConstruTop", descricao: "Lorem ipsum dolor sit amet")
 var empresa2 = Empresa(nome: "Amazonya", descricao: "Amet sit dolor ipsum lorem")
 var empresa3 = Empresa(nome: "oBotikario", descricao: "Lorem lorem ipsum ipsum dolor dolor sit sit amet amet")
+var empresa4 = Empresa(nome: "Outras empresas", descricao: "Lorem lorem ipsum ipsum dolor dolor sit sit amet amet")
 
 struct ProjetosView: View {
     @State var input: String = ""
