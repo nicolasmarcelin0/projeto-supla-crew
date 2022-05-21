@@ -171,11 +171,6 @@ struct PerfilUsuarioView: View {
         }
         .padding(10)
     }
-
-    
-    
-    
-    
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
