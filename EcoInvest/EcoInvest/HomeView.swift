@@ -1,7 +1,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    init() {
+        UITabBar.appearance().barTintColor = .green
+    }
+    
     var body: some View {
+        
+        
         TabView {
             /*
             LoginView()
