@@ -14,8 +14,10 @@ struct PerfilUsuarioView: View {
     
     var body: some View {
         
+
         VStack {
-            // Ft. de perfil e campo p/ nome de usuário
+            // Ft. de perfil e campo p/ nome de
+            // usuário
             HStack {
                 // Foto de perfil
                 Image(systemName: "person.fill")
@@ -170,13 +172,11 @@ struct PerfilUsuarioView: View {
         .padding(10)
     }
     
-    
-    
-    
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             PerfilUsuarioView()
+
         }
     }
 }
+

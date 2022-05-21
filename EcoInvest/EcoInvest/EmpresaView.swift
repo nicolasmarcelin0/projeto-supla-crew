@@ -21,22 +21,33 @@ struct EmpresaView: View {
 //    let company: Company
     
     var body: some View {
-        VStack(alignment: .center){
+        GeometryReader { geo in
+            ZStack {
+                Image("fundo")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
             
         ScrollView() {
         VStack(alignment: .center) {
 
-            Rectangle()
-                .fill(.green)
-                .frame(width: 400, height: 200)
-                .cornerRadius(50)
+            Image("amazon_wallpaper")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 340, height: 160)
+                .cornerRadius(40)
                 .shadow(radius: 5)
 
-            Image("group-fill")
+            Image("Amazon")
                 .resizable()
-                .frame(width: 120, height: 120)
-                .padding(.top, -65)
+                .frame(width: 100, height: 100)
+                .clipShape(Circle())
+                .overlay{
+                    Circle().stroke(.white, lineWidth: 4)
+                }
                 .shadow(radius: 5)
+                .padding( .top, -80)
             
             // Nome da empresa do tipo investidor
             Text(empresa_padrao.nome)
@@ -207,4 +218,5 @@ struct EmpresaView_Previews: PreviewProvider {
     static var previews: some View {
         EmpresaView()
     }
+}
 }
