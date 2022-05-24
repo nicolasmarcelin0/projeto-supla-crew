@@ -1,9 +1,15 @@
+//
+//  HomeView2.0.swift
+//  EcoInvest
+//
+//  Created by aluno on 24/05/22.
+//
+
 import SwiftUI
 
-struct HomeView: View {
+struct HomeView2_0: View {
     init(){
-        UITabBar.appearance().isTranslucent = false
-        UITabBar.appearance().barTintColor = UIColor(named: "Green-System")
+        UITabBar.appearance().barTintColor = .systemBackground
     }
     
     @State var selectedIndex = 0
@@ -12,7 +18,6 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
-            
             ZStack {
                 switch selectedIndex {
                 case 0:
@@ -45,41 +50,8 @@ struct HomeView: View {
 }
 
 
-/*
-    var body: some View {
-    
-        TabView {
-            
-            LoginView()
-                .tabItem {
-                    Label("Login", systemImage: "pencil")
-                }
-            PerfilUsuarioView()
-                .tabItem {
-                    Label("Perfil", systemImage: "person")
-
-                }
-                
-            ProjetosView()
-                .tabItem {
-                    Label("Projetos", systemImage:"house")
-                }
-            EmpresasView()
-                .tabItem {
-                    Label("Empresas", systemImage: "house")
-                }
-                
-
-        }
-        
-        .navigationTitle("EcoInvest")
-    }
- 
-*/
-
-struct home_Previews: PreviewProvider {
+struct HomeView2_0_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView2_0()
     }
 }
-
