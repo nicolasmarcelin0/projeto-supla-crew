@@ -5,24 +5,36 @@ import SwiftUI
 
 struct EmpresasView: View {
     var body: some View {
-        ScrollView {
-            VStack(alignment: .center) {
-                ZStack {
-                    Text("Empresas")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .frame(width: 450, height: 75, alignment: .center)
-                        .padding(.trailing, -8)
-                        .foregroundColor(.white)
-                        .background(.green)
-                    
-                    Image("logo")
-                        .resizable()
-                        .frame(width: 90, height: 90, alignment: .center)
-                        .padding(.trailing, 300)
+        
+        ZStack {
+            NavigationView{
+                
 
+                ZStack{
+                    
+                    Color("VerdeBonito")
+                        .edgesIgnoringSafeArea(.top)
+                        .padding(.bottom, 765)
+
+                    
                 }
                 
+
+                .navigationBarItems(trailing:
+                        Image(systemName:"globe.americas.fill")
+                                        .resizable()
+                                        .frame(width: 70, height: 70, alignment: .center)
+                                        .padding(.trailing, 310)
+                        
+                    )
+                
+
+            }
+            
+        
+        
+
+        VStack{
 
                 NavigationLink(destination: EmpresaView()) {
                     SpecialButton(buttonText:"Pear", buttonImage:"Pear")
@@ -38,7 +50,7 @@ struct EmpresasView: View {
                 }
             }
         }
-        
+    }
         
         
 //        VStack (alignment: .center) {
@@ -66,13 +78,14 @@ struct EmpresasView: View {
 //                SpecialButton(buttonText:"Natura",buttonImage:"Natura")
 //
 //            }
-        }
+        
     
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         EmpresasView()
 .previewInterfaceOrientation(.portrait)
     }
+}
 }
