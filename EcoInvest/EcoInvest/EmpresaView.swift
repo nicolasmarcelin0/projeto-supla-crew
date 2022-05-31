@@ -7,7 +7,7 @@ struct GrowingButton: ButtonStyle {
         configuration.label
             .font(.caption)
             .multilineTextAlignment(.center)
-            .frame(width: 70, height: 60)
+            .frame(width: 250, height: 60)
             .background(Color.init(red: 200/255, green: 100/255, blue: 180/255))
             .cornerRadius(15)
             .shadow(radius: 5)
@@ -35,7 +35,7 @@ struct EmpresaView: View {
             Image("amazon_wallpaper")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 340, height: 160)
+                .frame(width: 400, height: 160)
                 .cornerRadius(40)
                 .shadow(radius: 5)
 
@@ -59,12 +59,12 @@ struct EmpresaView: View {
                 .shadow(radius: 5)
  
             // Descrição da empresa do tipo investidor
-            Text(empresa_padrao.descricao)
+           /* Text(empresa_padrao.descricao)
                 .font(.caption)
                 .padding()
                 .background(Color.init(red: 20/255, green: 155/255, blue: 105/255))
                 .cornerRadius(15)
-                .shadow(radius: 5)
+                .shadow(radius: 5)*/
             
             HStack {
                 Image("delete-bin-6-fill")
@@ -85,14 +85,14 @@ struct EmpresaView: View {
                         .shadow(radius: 5)
  
                     HStack {
-                        Text("Descrição do projeto ''Implementação de áreas verdes''")
+                       /* Text("Descrição do projeto ''Implementação de áreas verdes''")
                             .font(.caption)
                             .multilineTextAlignment(.center)
                             .frame(width: 210, height: 60)
                             .background(Color.init(red: 20/255, green: 115/255, blue: 105/255))
                             .cornerRadius(15)
                             .padding(.leading, 0)
-                            .shadow(radius: 5)
+                            .shadow(radius: 5)*/
  
                         
                         Button("Empresa 1") {
@@ -127,14 +127,14 @@ struct EmpresaView: View {
                         .shadow(radius: 5)
  
                     HStack {
-                        Text("Descrição do projeto")
+                       /* Text("Descrição do projeto")
                             .font(.caption)
                             .multilineTextAlignment(.center)
                             .frame(width: 210, height: 60)
                             .background(Color.init(red: 20/255, green: 115/255, blue: 105/255))
                             .cornerRadius(15)
                             .padding(.leading, 0)
-                            .shadow(radius: 5)
+                            .shadow(radius: 5) */
  
                         
                         Button("Empresa 2") {
