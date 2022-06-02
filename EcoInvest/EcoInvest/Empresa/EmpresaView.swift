@@ -142,7 +142,7 @@ struct GrowingButton: ButtonStyle {
 }
 
 struct EmpresaView: View {
-//    let company: Company
+    let company: Company
     
     var body: some View {
         GeometryReader { geo in
@@ -173,7 +173,7 @@ struct EmpresaView: View {
                 .shadow(radius: 5)
                 .padding( .top, -80)
             
-            // Nome da empresa do tipo investidor
+             Nome da empresa do tipo investidor
             Text(empresa_padrao.nome)
                 .font(.headline)
                 .fontWeight(.heavy)
@@ -182,7 +182,7 @@ struct EmpresaView: View {
                 .cornerRadius(15)
                 .shadow(radius: 5)
  
-            // Descrição da empresa do tipo investidor
+             Descrição da empresa do tipo investidor
            /Text(empresa_padrao.descricao)
                 .font(.caption)
                 .padding()
