@@ -20,6 +20,7 @@ struct GrowingButton2: ButtonStyle {
 
 struct EmpresaView: View {
     @State var offset: CGFloat = 0
+    @State private var search: String = ""
     
     var body: some View {
         ZStack{
@@ -81,6 +82,19 @@ struct EmpresaView: View {
                         })
                     
                     Spacer()
+                    
+                    
+                    HStack{
+                        HStack {
+                            Image(systemName: "bag.fill")
+                                .padding(.trailing, 8)
+                            TextField("Procurar Projeto", text: $search)
+                        }
+                        .padding(.all, 20)
+                        .background(Color.white)
+                        .cornerRadius(10.0)
+                        .padding(.trailing)
+                    }
                     ZStack{
                         
                     
