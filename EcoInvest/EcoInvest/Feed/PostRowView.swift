@@ -34,7 +34,6 @@ struct PostRowView: View {
         
             HStack{
                 Button{
-                    
                 }label: {
                     Image(systemName: "arrow.turn.up.right")
                 }
