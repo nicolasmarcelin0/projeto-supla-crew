@@ -1,59 +1,44 @@
 import Foundation
 import SwiftUI
 
-
-
 struct EmpresasView: View {
+    
+    let empresas = ["Amazon", "Natura", "Apple"]
+    
+    let empresasComoObjeto = [
+        Empresa(nome: "Amazon", descricao: "Lorem ipsum dolor sit amet", icone: "Amazon"),
+        Empresa(nome: "Natura", descricao: "Amet sit dolor ipsum lorem", icone: "Natura"),
+        Empresa(nome: "Apple", descricao: "Lorem lorem ipsum ipsum dolor dolor sit sit amet amet", icone: "Pear")
+    ]
+    
     var body: some View {
-        
-        ZStack {
-            NavigationView{
-                
-
-                ZStack{
-                    
-                    Color("Green-System")
-                        .edgesIgnoringSafeArea(.top)
-                        .padding(.bottom, 765)
-
-                    
-                }
-                
-
-                .navigationBarItems(trailing:
-                        Image(systemName:"globe.americas.fill")
-                                        .resizable()
-                                        .frame(width: 70, height: 70, alignment: .center)
-                                        .padding(.trailing, 310)
-                        
-                    )
-                
-
-            }
-            
-        
-        
-
         VStack {
 
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Pear", buttonImage:"Pear")
+                
+            NavigationView {
+                ScrollView {
+                    VStack {
+                        ForEach(empresasComoObjeto, id: \.nome) { empresa in
+                            NavigationLink(destination: EmpresaView(empresa: empresa)) {
+                                SpecialButton(buttonText: empresa.nome, buttonImage: empresa.icone)
+                            }
+                            .ignoresSafeArea()
+                        }
+                    }
+                    
                 }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Amazon", buttonImage:"Amazon")
-                }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"oBoticario", buttonImage:"oBoticario")
-                }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Natura", buttonImage:"Natura")
-                }
+                .navigationTitle(Text("Empresas"))
                 
             }
+            
+            
         }
+        
     }
-        
-        
+}
+
+
+
 //        VStack (alignment: .center) {
 //            ZStack(alignment: .leading){
 //                Rectangle()
@@ -79,8 +64,9 @@ struct EmpresasView: View {
 //                SpecialButton(buttonText:"Natura",buttonImage:"Natura")
 //
 //            }
-        
-    
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -88,4 +74,4 @@ struct ContentView_Previews: PreviewProvider {
         EmpresasView()
     }
 }
-}
+

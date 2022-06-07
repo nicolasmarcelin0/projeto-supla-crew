@@ -19,6 +19,9 @@ struct GrowingButton2: ButtonStyle {
 }
 
 struct EmpresaView: View {
+    
+    let empresa: Empresa
+    
     @State var offset: CGFloat = 0
     @State private var search: String = ""
     
@@ -58,7 +61,7 @@ struct EmpresaView: View {
                 VStack{
                 
                     HStack{
-                        Image("Amazon")
+                        Image(empresa.icone)
                         .resizable()
                         .frame(width: 100, height: 100)
                         .clipShape(Circle())
@@ -72,7 +75,7 @@ struct EmpresaView: View {
                     Spacer()
                     
                     VStack(alignment: .center, spacing: 10, content: {
-                            Text(empresa_padrao.nome)
+                        Text(empresa.nome)
                             .font(.title)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.black)
@@ -354,7 +357,7 @@ struct EmpresaView: View {
 
 struct EmpresaView_Previews: PreviewProvider {
     static var previews: some View {
-        EmpresaView()
+        EmpresaView(empresa: .empresa_padrao)
     }
 }
 
