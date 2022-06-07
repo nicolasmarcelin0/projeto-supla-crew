@@ -20,11 +20,13 @@ struct HomeView: View {
                     PerfilUsuarioView()
                 case 2 :
                     ProjetosView()
-                default:
+                case 3:
                     EmpresasView()
+                default:
+                    FeedView()
                 }
             }
-            Spacer()
+            
             ZStack{
                 Rectangle()
                     .foregroundColor(Color("Green-System"))
@@ -36,15 +38,18 @@ struct HomeView: View {
                             selectedIndex = num
                         },
                                label:{
-                            Spacer()
+                        
                             Image(systemName: tabBarImagesNames[num])
                                 .font(.system(size:29, weight: .bold))
                                 .foregroundColor(selectedIndex == num ? Color(.white) : .init(white: 0.9))
-                            Spacer()
+                            
                         })
                         
                     }
+                    .padding()
                 }
+                
+                
             }
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         }

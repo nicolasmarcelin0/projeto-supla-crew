@@ -29,9 +29,12 @@ struct FeedView: View {
                         .padding(.trailing, 300)
 
                 }
-            LazyVStack{
-                ForEach(0 ... 10, id:\.self){ _ in
+                
+            LazyVStack {
+                
+                ForEach(0...10, id:\.self){ _ in
                     PostRowView()
+                    
                 }
             }
         }

@@ -34,7 +34,7 @@ struct EmpresasView: View {
         
         
 
-        VStack{
+        VStack {
 
                 NavigationLink(destination: EmpresaView()) {
                     SpecialButton(buttonText:"Pear", buttonImage:"Pear")
@@ -48,6 +48,7 @@ struct EmpresasView: View {
                 NavigationLink(destination: EmpresaView()) {
                     SpecialButton(buttonText:"Natura", buttonImage:"Natura")
                 }
+                
             }
         }
     }
