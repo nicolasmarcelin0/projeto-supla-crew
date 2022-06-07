@@ -118,6 +118,7 @@
 			children = (
 				570BAAE82839233A008AF423 /* InicializacaoScreen.storyboard */,
 				570BAAE02839163F008AF423 /* GifLoader.swift */,
+				57C810A5280F4B3C008447C2 /* LoginView.swift */,
 				57E956F92848D43300D2CA53 /* Home & Tab */,
 				57E956F82848D3ED00D2CA53 /* Feed */,
 				5789D40228469E9E00A1D405 /* Empresa */,
@@ -177,7 +178,6 @@
 			children = (
 				5733DF2E28060C3E0031FA26 /* HomeView.swift */,
 				5733DF022805F0660031FA26 /* EcoInvest.swift */,
-				57C810A5280F4B3C008447C2 /* LoginView.swift */,
 				5733DF042805F0660031FA26 /* PerfilUsuarioView.swift */,
 				5733DF30280612260031FA26 /* ProjetosView.swift */,
 			);

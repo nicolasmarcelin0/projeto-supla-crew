@@ -5,52 +5,18 @@ import SwiftUI
 
 struct EmpresasView: View {
     var body: some View {
-        
-        ZStack {
-            NavigationView{
-                
-
-                ZStack{
-                    
-                    Color("Green-System")
-                        .edgesIgnoringSafeArea(.top)
-                        .padding(.bottom, 765)
-
-                    
-                }
-                
-
-                .navigationBarItems(trailing:
-                        Image(systemName:"globe.americas.fill")
-                                        .resizable()
-                                        .frame(width: 70, height: 70, alignment: .center)
-                                        .padding(.trailing, 310)
-                        
-                    )
-                
-
-            }
-            
-        
-        
-
         VStack{
-
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Pear", buttonImage:"Pear")
-                }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Amazon", buttonImage:"Amazon")
-                }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"oBoticario", buttonImage:"oBoticario")
-                }
-                NavigationLink(destination: EmpresaView()) {
-                    SpecialButton(buttonText:"Natura", buttonImage:"Natura")
+            NavigationView {
+                VStack {
+                    NavigationLink(destination: EmpresaView()) {
+                        SpecialButton(buttonText:"Pear",buttonImage:"Pear")
+                    }
                 }
             }
         }
     }
+}
+
         
         
 //        VStack (alignment: .center) {
@@ -79,7 +45,8 @@ struct EmpresasView: View {
 //
 //            }
         
-    
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -87,4 +54,4 @@ struct ContentView_Previews: PreviewProvider {
         EmpresasView()
     }
 }
-}
+

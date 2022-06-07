@@ -15,7 +15,7 @@ struct FeedView: View {
         ScrollView{
             VStack(alignment: .center) {
                 ZStack {
-                    Text("Empresas")
+                    Text("Feed")
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(width: 450, height: 75, alignment: .center)
