@@ -18,10 +18,13 @@
 		5733DF202805F0670031FA26 /* EcoInvestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733DF1F2805F0670031FA26 /* EcoInvestUITestsLaunchTests.swift */; };
 		5733DF2F28060C3E0031FA26 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733DF2E28060C3E0031FA26 /* HomeView.swift */; };
 		5733DF31280612260031FA26 /* ProjetosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733DF30280612260031FA26 /* ProjetosView.swift */; };
+		5789D40428469F5600A1D405 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789D40328469F5600A1D405 /* FeedView.swift */; };
 		579F3AA5282FD91800D8F4D4 /* SpecialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F3AA4282FD91800D8F4D4 /* SpecialButton.swift */; };
 		57C810A4280F487D008447C2 /* EmpresaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C810A3280F487D008447C2 /* EmpresaView.swift */; };
 		57C810A6280F4B3C008447C2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C810A5280F4B3C008447C2 /* LoginView.swift */; };
 		57C810AC280F5466008447C2 /* EmpresasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C810AB280F5466008447C2 /* EmpresasView.swift */; };
+		57E544AE28426BC5004535C7 /* ProjetoCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57E544AD28426BC5004535C7 /* ProjetoCard.storyboard */; };
+		57E956FB2848D4BC00D2CA53 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E956FA2848D4BC00D2CA53 /* PostRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +59,13 @@
 		5733DF1F2805F0670031FA26 /* EcoInvestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoInvestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5733DF2E28060C3E0031FA26 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5733DF30280612260031FA26 /* ProjetosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetosView.swift; sourceTree = "<group>"; };
+		5789D40328469F5600A1D405 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		579F3AA4282FD91800D8F4D4 /* SpecialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialButton.swift; sourceTree = "<group>"; };
 		57C810A3280F487D008447C2 /* EmpresaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaView.swift; sourceTree = "<group>"; };
 		57C810A5280F4B3C008447C2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57C810AB280F5466008447C2 /* EmpresasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresasView.swift; sourceTree = "<group>"; };
+		57E544AD28426BC5004535C7 /* ProjetoCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjetoCard.storyboard; sourceTree = "<group>"; };
+		57E956FA2848D4BC00D2CA53 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +116,11 @@
 		5733DF012805F0660031FA26 /* EcoInvest */ = {
 			isa = PBXGroup;
 			children = (
-				579F3AA4282FD91800D8F4D4 /* SpecialButton.swift */,
-				57C810A5280F4B3C008447C2 /* LoginView.swift */,
-				5733DF022805F0660031FA26 /* EcoInvest.swift */,
-				5733DF042805F0660031FA26 /* PerfilUsuarioView.swift */,
-				5733DF2E28060C3E0031FA26 /* HomeView.swift */,
-				5733DF30280612260031FA26 /* ProjetosView.swift */,
-				57C810A3280F487D008447C2 /* EmpresaView.swift */,
-				57C810AB280F5466008447C2 /* EmpresasView.swift */,
-				570BAAE02839163F008AF423 /* GifLoader.swift */,
 				570BAAE82839233A008AF423 /* InicializacaoScreen.storyboard */,
+				570BAAE02839163F008AF423 /* GifLoader.swift */,
+				57E956F92848D43300D2CA53 /* Home & Tab */,
+				57E956F82848D3ED00D2CA53 /* Feed */,
+				5789D40228469E9E00A1D405 /* Empresa */,
 				5733DF062805F0660031FA26 /* Assets.xcassets */,
 				5733DF082805F0660031FA26 /* Preview Content */,
 			);
@@ -149,6 +150,38 @@
 				5733DF1F2805F0670031FA26 /* EcoInvestUITestsLaunchTests.swift */,
 			);
 			path = EcoInvestUITests;
+			sourceTree = "<group>";
+		};
+		5789D40228469E9E00A1D405 /* Empresa */ = {
+			isa = PBXGroup;
+			children = (
+				57E544AD28426BC5004535C7 /* ProjetoCard.storyboard */,
+				57C810AB280F5466008447C2 /* EmpresasView.swift */,
+				57C810A3280F487D008447C2 /* EmpresaView.swift */,
+				579F3AA4282FD91800D8F4D4 /* SpecialButton.swift */,
+			);
+			path = Empresa;
+			sourceTree = "<group>";
+		};
+		57E956F82848D3ED00D2CA53 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5789D40328469F5600A1D405 /* FeedView.swift */,
+				57E956FA2848D4BC00D2CA53 /* PostRowView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		57E956F92848D43300D2CA53 /* Home & Tab */ = {
+			isa = PBXGroup;
+			children = (
+				5733DF2E28060C3E0031FA26 /* HomeView.swift */,
+				5733DF022805F0660031FA26 /* EcoInvest.swift */,
+				57C810A5280F4B3C008447C2 /* LoginView.swift */,
+				5733DF042805F0660031FA26 /* PerfilUsuarioView.swift */,
+				5733DF30280612260031FA26 /* ProjetosView.swift */,
+			);
+			path = "Home & Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +290,7 @@
 			files = (
 				5733DF0A2805F0660031FA26 /* Preview Assets.xcassets in Resources */,
 				570BAAE92839233A008AF423 /* InicializacaoScreen.storyboard in Resources */,
+				57E544AE28426BC5004535C7 /* ProjetoCard.storyboard in Resources */,
 				5733DF072805F0660031FA26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5789D40428469F5600A1D405 /* FeedView.swift in Sources */,
 				57C810AC280F5466008447C2 /* EmpresasView.swift in Sources */,
 				5733DF31280612260031FA26 /* ProjetosView.swift in Sources */,
 				57C810A6280F4B3C008447C2 /* LoginView.swift in Sources */,
 				5733DF052805F0660031FA26 /* PerfilUsuarioView.swift in Sources */,
 				579F3AA5282FD91800D8F4D4 /* SpecialButton.swift in Sources */,
 				57C810A4280F487D008447C2 /* EmpresaView.swift in Sources */,
+				57E956FB2848D4BC00D2CA53 /* PostRowView.swift in Sources */,
 				570BAAE12839163F008AF423 /* GifLoader.swift in Sources */,
 				5733DF2F28060C3E0031FA26 /* HomeView.swift in Sources */,
 				5733DF032805F0660031FA26 /* EcoInvest.swift in Sources */,

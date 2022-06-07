@@ -16,6 +16,21 @@ struct PerfilUsuarioView: View {
         
 
         VStack {
+            ZStack {
+                Text("Perfil")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(width: 450, height: 75, alignment: .center)
+                    .padding(.trailing, -8)
+                    .foregroundColor(.white)
+                    .background(.green)
+                
+                Image("logo")
+                    .resizable()
+                    .frame(width: 90, height: 90, alignment: .center)
+                    .padding(.trailing, 300)
+
+            }
             // Ft. de perfil e campo p/ nome de
             // usuário
             HStack {
