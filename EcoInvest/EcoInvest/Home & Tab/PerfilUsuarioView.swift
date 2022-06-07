@@ -48,7 +48,7 @@ struct PerfilUsuarioView: View {
                 //                .padding(.horizontal, 35)
                 //                .padding(.vertical, 20)
                 //                .frame(width: 100, height: 100, alignment: .topLeading)
-                Spacer()
+                
                 
                 // Nome de usuário
                 TextField(
@@ -61,7 +61,13 @@ struct PerfilUsuarioView: View {
                     .padding(10)
                     .background(.green.opacity(0.50))
                     .cornerRadius(10.0)
+                
+                Button("Editar") {
+                    
+     
+                }
             }
+            
             
             // Bio do usuário
             ZStack(alignment: .leading) {
